@@ -1,4 +1,8 @@
 /* 
+
+The implementation of a general left-biased B-tree with preemptive split.
+You can, obviously, change the structure of the B-tree by just changing the ORDER.
+
 author :- 
      _____       _____     __    __     __    _____     __        _____      __    __
     /     \     |     \   |  |  |  |   |  |  |     \   |  |      /     \     \ \  / /
@@ -28,7 +32,7 @@ const int MIN_CHILDREN = ceil(ORDER/2.0);
 const int MAX_CHILDREN = ORDER;
 const int MIN_KEYS = MIN_CHILDREN-1;
 const int MAX_KEYS = MAX_CHILDREN-1;
-const int MID = (ORDER - 1)/2;
+const int MID = MAX_KEYS/2;
 
 
 /*
