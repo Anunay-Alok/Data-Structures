@@ -1,6 +1,6 @@
 /* 
 
-The implementation of a general left-biased B-tree with preemptive split.
+The implementation of a general right-biased B-tree with preemptive split.
 You can, obviously, change the structure of the B-tree by just changing the ORDER.
 
 author :- 
